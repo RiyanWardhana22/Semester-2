@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JST Logic Gate</title>
+    <link rel="stylesheet" href="/jst_logic_gate_app/static/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JST Logic Gate Simulator</h1>
+      <form id="logicGateForm">
+        <label for="gate">Select Logic Gate:</label>
+        <select id="gate" name="gate">
+          <option value="OR">OR</option>
+          <option value="AND">AND</option>
+          <option value="AND_NOT">AND NOT</option>
+        </select>
+        <label for="input1">Input 1:</label>
+        <input
+          type="number"
+          id="input1"
+          name="input1"
+          min="0"
+          max="1"
+          required
+        />
+        <label for="input2">Input 2:</label>
+        <input
+          type="number"
+          id="input2"
+          name="input2"
+          min="0"
+          max="1"
+          required
+        />
+        <button type="submit">Predict</button>
+      </form>
+      <div id="result">
+        <h2>Result: <span id="resultValue"></span></h2>
+      </div>
+    </div>
+  </body>
+  <script src="/jst_logic_gate_app/static/script.js"></script>
+</html>
